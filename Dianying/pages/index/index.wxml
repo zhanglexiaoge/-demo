@@ -1,0 +1,27 @@
+
+<view class="indexview">
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}" wx:key="imgUrls">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" style='width:100%'/>
+    </swiper-item>
+  </block>
+</swiper>
+<view class="itemview" wx:for="{{Movies}}" wx:for-item="item">
+
+ <view class="pic">
+                <image src="{{item.images.small}}" mode="aspectFill" />
+   </view>
+
+ <view class="movieinfro">
+        
+
+        <text>{{item.text}}</text>
+        
+   </view>
+
+</view>
+
+</view>
+
